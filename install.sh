@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/Titanic
+cd $HOME/Larica
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
@@ -8,9 +8,9 @@ chmod +x BA
 ./BA
 }
 get() {
-rm -fr Titanic.lua
+rm -fr Larica.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Titanic-DeV/Titanic/Titanic/Titanic.lua"
+wget "https://raw.githubusercontent.com/Larica-DeV/Larica/Larica/Larica.lua"
 lua start.lua
 }
 installall(){
@@ -48,7 +48,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Titanic
+cd Larica
 rm -rf luarocks*
 lua start.lua
 

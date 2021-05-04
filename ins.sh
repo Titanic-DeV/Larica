@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/Titanic
+cd $HOME/Larica
 rm -rf $HOME/.telegram-cli
 install(){
 apt install dnsutils

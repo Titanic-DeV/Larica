@@ -19,7 +19,7 @@ Write_Info_Sudo:write([[
 
 s = "Titanic-DeV"
 
-q = "Titanic"
+q = "Larica"
 
 token = "]]..Token..[["
 
@@ -81,24 +81,24 @@ local t = json:decode(https.request('https://boyka-api.ml/index.php?n=by&id='..r
 local RunBot = io.open("Run", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/Titanic
+cd $HOME/Larica
 token="]]..redis:get(Server_Done.."Token_Write")..[["
 rm -fr BoykA.lua
-wget "https://raw.githubusercontent.com/Titanic-DeV/Titanic/Titanic/Titanic.lua"
+wget "https://raw.githubusercontent.com/Titanic-DeV/Larica/Larica/Larica.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./Titanic.lua -p PROFILE --bot=$token
+./tg -s ./Larica.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("BA", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/Titanic
+cd $HOME/Larica
 while(true) do
 rm -fr ../.telegram-cli
-screen -S Titanic -X kill
-screen -S Titanic ./Run
+screen -S Larica -X kill
+screen -S Larica ./Run
 done
 ]])
 RunTs:close()
